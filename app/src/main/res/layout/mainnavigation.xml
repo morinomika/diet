@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -22,7 +21,7 @@
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:text="NavigationApp"
+                android:text="DIET"
                 android:id="@+id/textView2"
                 android:layout_weight="1"
                 android:textColor="#FFFFFF"
@@ -32,28 +31,28 @@
                 android:layout_width="32dp"
                 android:layout_height="32dp"
                 android:id="@+id/imageView"
-                android:src="@drawable/serch"
+                android:src="@drawable/calender"
                 android:layout_marginRight="10dp"
                 android:layout_marginLeft="10dp"
-                android:onClick="search" />
+                android:onClick="calender" />
 
             <ImageView
                 android:layout_width="32dp"
                 android:layout_height="32dp"
                 android:id="@+id/imageView2"
-                android:src="@drawable/home"
+                android:src="@drawable/graph"
                 android:layout_marginRight="10dp"
                 android:layout_marginLeft="10dp"
-                android:onClick="home" />
+                android:onClick="graph" />
 
             <ImageView
                 android:layout_width="32dp"
                 android:layout_height="32dp"
                 android:id="@+id/imageView3"
-                android:src="@drawable/setting"
+                android:src="@drawable/photo"
                 android:layout_marginRight="10dp"
                 android:layout_marginLeft="10dp"
-                android:onClick="setting" />
+                android:onClick="photo" />
 
 
         </LinearLayout>

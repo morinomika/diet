@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">Diet2</string>
+    <string name="open">Diet2</string>
+    <string name="close">Diet2</string>
 
     <string name="title_activity_fullscreen">FullscreenActivity</string>
     <string name="dummy_button">Dummy Button</string>

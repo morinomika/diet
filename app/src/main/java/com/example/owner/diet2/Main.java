@@ -13,7 +13,7 @@ import android.widget.Toast;
 
 import java.io.InputStream;
 
-public class Main2Activity extends AppCompatActivity {
+public class Main extends AppCompatActivity {
 
 
     static final int REQUEST_CODE_GALLERY = 1;
@@ -35,7 +35,7 @@ public class Main2Activity extends AppCompatActivity {
     }
     public void enter(View v){
 
-        Intent intent = new Intent(this, MainActivity.class);
+        Intent intent = new Intent(this, Calender.class);
         startActivity(intent);
     }
 
@@ -65,7 +65,7 @@ public class Main2Activity extends AppCompatActivity {
                     Bitmap bmp = BitmapFactory.decodeStream(inputStream);
                     imageView.setImageBitmap(bmp);
                 }catch (Exception e){
-                    Toast.makeText(Main2Activity.this, "エラー", Toast.LENGTH_LONG).show();
+                    Toast.makeText(Main.this, "エラー", Toast.LENGTH_LONG).show();
                 }
 
             }else if(requestCode == REQUEST_CODE_CAMERA){
@@ -75,7 +75,7 @@ public class Main2Activity extends AppCompatActivity {
             }
 
         }else if (resultCode == RESULT_CANCELED){
-            Toast.makeText(Main2Activity.this, "CANCEL", Toast.LENGTH_LONG).show();
+            Toast.makeText(Main.this, "CANCEL", Toast.LENGTH_LONG).show();
         }
     }
 
