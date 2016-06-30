@@ -9,21 +9,18 @@
         android:layout_height="100dp">
 
         <ImageView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@+id/imageView1"
+            android:layout_weight="1"
+            android:src="@drawable/calender" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="New Text"
+            android:id="@+id/textView6"
             android:layout_weight="1" />
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:id="@+id/imageView2"
-            android:layout_weight="1" />
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:id="@+id/imageView3"
-            android:layout_weight="1" />
     </LinearLayout>
 </LinearLayout>

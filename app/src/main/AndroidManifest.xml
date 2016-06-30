@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:replace="android:icon">
-        <activity android:name=".Calender"></activity>
+        <activity android:name=".Calender" />
         <activity android:name=".Main">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -19,8 +19,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".mypage" />
-        <activity android:name=".GraphTest">
-        </activity>
+        <activity android:name=".GraphTest" />
+        <activity android:name=".ListContent2"></activity>
     </application>
 
 </manifest>

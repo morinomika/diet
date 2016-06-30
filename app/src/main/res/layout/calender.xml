@@ -32,28 +32,28 @@
                 android:layout_width="32dp"
                 android:layout_height="32dp"
                 android:id="@+id/imageView"
-                android:src="@drawable/serch"
+                android:src="@drawable/calender"
                 android:layout_marginRight="10dp"
                 android:layout_marginLeft="10dp"
-                android:onClick="search" />
+                android:onClick="calender" />
 
             <ImageView
                 android:layout_width="32dp"
                 android:layout_height="32dp"
                 android:id="@+id/imageView2"
-                android:src="@drawable/home"
+                android:src="@drawable/photo"
                 android:layout_marginRight="10dp"
                 android:layout_marginLeft="10dp"
-                android:onClick="home" />
+                android:onClick="photo" />
 
             <ImageView
                 android:layout_width="32dp"
                 android:layout_height="32dp"
                 android:id="@+id/imageView3"
-                android:src="@drawable/setting"
+                android:src="@drawable/graph"
                 android:layout_marginRight="10dp"
                 android:layout_marginLeft="10dp"
-                android:onClick="setting" />
+                android:onClick="graph" />
 
 
         </LinearLayout>
@@ -87,6 +87,12 @@
                     android:layout_height="wrap_content"
                     android:background="?attr/colorPrimary"
                     android:minHeight="?attr/actionBarSize"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="New Text"
+                    android:id="@+id/date_id" />
 
                 <TextView
                     android:layout_width="wrap_content"

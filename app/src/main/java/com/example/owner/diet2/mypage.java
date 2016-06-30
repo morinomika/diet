@@ -15,8 +15,8 @@ public class mypage extends AppCompatActivity {
         setContentView(R.layout.mypage);
 
        listView = (ListView) findViewById(R.id.listView);
-        ArrayList<ListContent> arrayList = new ArrayList<>();
-        arrayList.add(new ListContent(R.drawable.food1 , R.drawable.food2 , R.drawable.food3));
+        ArrayList<ListContent2> arrayList = new ArrayList<>();
+        arrayList.add(new ListContent(R.drawable. , ));
         arrayList.add(new ListContent(R.drawable.food1 , R.drawable.food2 , R.drawable.food3));
         arrayList.add(new ListContent(R.drawable.food1 , R.drawable.food2 , R.drawable.food3));
         arrayList.add(new ListContent(R.drawable.food1 , R.drawable.food2 , R.drawable.food3));

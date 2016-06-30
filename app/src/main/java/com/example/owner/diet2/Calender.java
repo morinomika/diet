@@ -1,7 +1,9 @@
 package com.example.owner.diet2;
 
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Color;
@@ -21,10 +23,12 @@ import android.widget.Toast;
 import java.io.InputStream;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
 
 public class Calender extends AppCompatActivity implements View.OnClickListener {
 
     TextView calorieText;
+    SharedPreferences pref;
 
     ArrayList<ListContent> mPlanetTitles;
     ListView mDrawerList;
@@ -34,11 +38,11 @@ public class Calender extends AppCompatActivity implements View.OnClickListener 
     CustomAdapter mCustomAdapter;
 
     TextView[] textView;
-    int[] ids = {R.id.textView16,R.id.textView17,R.id.textView18,R.id.textView19,R.id.textView20,R.id.textView21,R.id.textView22,
-            R.id.textView23,R.id.textView24,R.id.textView25,R.id.textView26,R.id.textView27,R.id.textView28,R.id.textView29,
-            R.id.textView30,R.id.textView31,R.id.textView32,R.id.textView33,R.id.textView34,R.id.textView35,R.id.textView36,
-            R.id.textView37,R.id.textView38,R.id.textView39,R.id.textView40,R.id.textView41,R.id.textView42,R.id.textView43,
-            R.id.textView44,R.id.textView45,R.id.textView46  };
+    int[] ids = {R.id.textView16, R.id.textView17, R.id.textView18, R.id.textView19, R.id.textView20, R.id.textView21, R.id.textView22,
+                 R.id.textView23, R.id.textView24, R.id.textView25, R.id.textView26, R.id.textView27, R.id.textView28, R.id.textView29,
+                R.id.textView30, R.id.textView31, R.id.textView32, R.id.textView33, R.id.textView34, R.id.textView35, R.id.textView36,
+                R.id.textView37, R.id.textView38, R.id.textView39, R.id.textView40, R.id.textView41, R.id.textView42, R.id.textView43,
+                R.id.textView44, R.id.textView45, R.id.textView46};
 
 
     @Override
@@ -47,6 +51,27 @@ public class Calender extends AppCompatActivity implements View.OnClickListener 
         setContentView(R.layout.calender);
 
 
+        TextView dateText = (TextView) findViewById(R.id.date_id);
+        Calendar cal = Calendar.getInstance();
+        int year = cal.get(Calendar.YEAR);
+        int month = cal.get(Calendar.MONTH);// 0 - 11
+        int day = cal.get(Calendar.DAY_OF_MONTH);
+        String date = year + "年" + (month + 1) + "月" + day + "日　";
+        dateText.setText(date);
+//
+//        if (day % 7 == 1){
+//
+//        }
+//
+//        if (day % 7 ==2){
+//            textView16 = null
+//        }
+
+
+        SharedPreferences pref = getSharedPreferences("weight", Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = pref.edit();
+        //editor.putInt("day", );
+        //editor.commit();
 
 
         mToolbar = (Toolbar) findViewById(R.id.tool_bar);
@@ -60,10 +85,11 @@ public class Calender extends AppCompatActivity implements View.OnClickListener 
 
 
         mPlanetTitles = new ArrayList<ListContent>();
-        mPlanetTitles.add(new ListContent(R.drawable.home_bk, R.drawable.setting_bk, R.drawable.serch_bk));
-        mPlanetTitles.add(new ListContent(R.drawable.home_bk, R.drawable.setting_bk, R.drawable.serch_bk));
-        mPlanetTitles.add(new ListContent(R.drawable.home_bk, R.drawable.setting_bk, R.drawable.serch_bk));
-        mCustomAdapter = new CustomAdapter(this,R.layout.listview_layout,mPlanetTitles);
+        mPlanetTitles.add(new ListContent(R.drawable.calender, "CALENDER"));
+        mPlanetTitles.add(new ListContent(R.drawable.photo,"PHOTO" ));
+        mPlanetTitles.add(new ListContent(R.drawable.graph,"GRAPH" ));
+
+        mCustomAdapter = new CustomAdapter(this, R.layout.listview_layout, mPlanetTitles);
         mDrawerList.setAdapter(mCustomAdapter);
 
 
@@ -84,27 +110,24 @@ public class Calender extends AppCompatActivity implements View.OnClickListener 
         };
 
         mDrawerLayout.setDrawerListener(mDrawerToggle);
-
-
     }
 
 
-    public void home(View v){
+    public void home(View v) {
 
-        Toast.makeText(getApplicationContext(),"homeボタンが押されました", Toast.LENGTH_SHORT).show();
-
-    }
-
-    public void search(View v){
-        Toast.makeText(getApplicationContext(),"searchボタンが押されました", Toast.LENGTH_SHORT).show();
+        Toast.makeText(getApplicationContext(), "homeボタンが押されました", Toast.LENGTH_SHORT).show();
 
     }
 
-    public void setting(View v){
-        Toast.makeText(getApplicationContext(),"settingボタンが押されました", Toast.LENGTH_SHORT).show();
+    public void search(View v) {
+        Toast.makeText(getApplicationContext(), "searchボタンが押されました", Toast.LENGTH_SHORT).show();
 
     }
 
+    public void setting(View v) {
+        Toast.makeText(getApplicationContext(), "settingボタンが押されました", Toast.LENGTH_SHORT).show();
+
+    }
 
 
     @Override
@@ -112,7 +135,6 @@ public class Calender extends AppCompatActivity implements View.OnClickListener 
         super.onPostCreate(savedInstanceState);
         mDrawerToggle.syncState();
     }
-
 
 
     //メニューを使ってToolbarにアイコンをつけたい場合。参考までに。
@@ -123,22 +145,16 @@ public class Calender extends AppCompatActivity implements View.OnClickListener 
 //    }
 
 
-
-
-
-
-
-
     @Override
-    public void onClick(View v){
+    public void onClick(View v) {
 
-        Log.e("TAG", String.valueOf((int) ((TextView)v).getTag()));
-
+        Log.e("TAG", String.valueOf((int) ((TextView) v).getTag()));
     }
 
-
-
-
 }
+
+
+
+
 
 

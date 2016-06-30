@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 
@@ -16,8 +17,7 @@ public class CustomAdapter extends ArrayAdapter<ListContent> {
 
     static class ViewHolder {
         ImageView image1;
-        ImageView image2;
-        ImageView image3;
+        TextView textView;
     }
 
     public CustomAdapter(Context context, int layoutId, ArrayList<ListContent> lists) {
@@ -34,8 +34,7 @@ public class CustomAdapter extends ArrayAdapter<ListContent> {
             convertView = LayoutInflater.from(getContext()).inflate(R.layout.listview_layout, parent, false);
             viewHolder = new ViewHolder();
             viewHolder.image1 = (ImageView) convertView.findViewById(R.id.imageView1);
-            viewHolder.image2 = (ImageView) convertView.findViewById(R.id.imageView2);
-            viewHolder.image3 = (ImageView) convertView.findViewById(R.id.imageView3);
+            viewHolder.textView = (TextView) convertView.findViewById(R.id.textView6);
             convertView.setTag(viewHolder);
 
         }
@@ -44,8 +43,7 @@ public class CustomAdapter extends ArrayAdapter<ListContent> {
 
 
         viewHolder.image1.setImageResource(listContent.getResId1());
-        viewHolder.image2.setImageResource(listContent.getResId2());
-        viewHolder.image3.setImageResource(listContent.getResId3());
+        viewHolder.textView.setText(listContent.getText());
 
 
         return convertView;
