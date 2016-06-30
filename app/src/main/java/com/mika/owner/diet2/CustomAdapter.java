@@ -1,4 +1,4 @@
-package com.example.owner.diet2;
+package com.mika.owner.diet2;
 
 import android.content.Context;
 import android.view.LayoutInflater;

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.owner.diet2">
+    package="com.mika.owner.diet2">
 
     <application
         android:allowBackup="true"
@@ -12,15 +12,19 @@
         tools:replace="android:icon">
         <activity android:name=".Calender" />
         <activity android:name=".Main">
+
+        </activity>
+        <activity android:name=".mypage" />
+        <activity android:name=".GraphTest" />
+        <activity android:name=".ListContent3" />
+        <activity android:name=".meals">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".mypage" />
-        <activity android:name=".GraphTest" />
-        <activity android:name=".ListContent2"></activity>
     </application>
 
 </manifest>

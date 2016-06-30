@@ -7,68 +7,72 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.owner.diet2.Main">
+    tools:context="com.mika.owner.diet2.Main">
 
     <LinearLayout
-        android:orientation="horizontal"
+        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="550dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true">
 
-        <FrameLayout
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/imageView"
+            android:src="@drawable/motivation"
+            android:layout_weight="10"
+            android:scaleType="fitCenter" />
 
-            <ImageView
-                android:layout_width="224dp"
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <Button
+                android:layout_width="fill_parent"
                 android:layout_height="match_parent"
-                android:id="@+id/imageView"
-                android:src="@drawable/motivation" />
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="ENTER"
-                android:id="@+id/enter"
-                android:layout_gravity="bottom"
-                android:layout_alignParentBottom="true"
-                android:layout_centerHorizontal="true"
-                android:layout_marginLeft="70dp"
-                android:onClick="enter"
-                android:background="#5a6afb"
-                android:textColor="#FFFFFF" />
-
-            <Button
-                android:layout_width="47dp"
-                android:layout_height="47dp"
                 android:text="Change"
                 android:id="@+id/change"
                 android:layout_alignParentBottom="true"
                 android:layout_alignParentRight="true"
                 android:layout_alignParentEnd="true"
                 android:onClick="gallery"
-                android:layout_marginTop="400dp"
+                android:layout_marginTop="0dp"
                 android:layout_marginLeft="0dp"
-                android:layout_gravity="left|bottom"
                 android:background="#5a6afb"
-                android:textColor="#FFFFFF" />
+                android:textColor="#FFFFFF"
+                android:layout_weight="1"
+                android:textSize="20dp" />
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:text="ENTER"
+                android:id="@+id/enter"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="0dp"
+                android:onClick="enter"
+                android:background="#5a6afb"
+                android:textColor="#FFFFFF"
+                android:layout_weight="1"
+                android:textSize="20dp" />
 
             <Button
                 style="?android:attr/buttonStyleSmall"
-                android:layout_width="56dp"
-                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
                 android:text="CAMERA"
                 android:id="@+id/camera"
-                android:layout_gravity="right|bottom"
                 android:onClick="camera"
                 android:background="#5a6afb"
-                android:textColor="#FFFFFF" />
-        </FrameLayout>
+                android:textColor="#FFFFFF"
+                android:layout_weight="1"
+                android:textSize="20dp" />
+        </LinearLayout>
 
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:id="@+id/imageView2"
-            android:src="@drawable/flower" />
     </LinearLayout>
 
 </RelativeLayout>

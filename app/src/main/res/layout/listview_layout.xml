@@ -6,21 +6,26 @@
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="100dp">
+        android:layout_height="wrap_content">
 
         <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
             android:id="@+id/imageView1"
-            android:layout_weight="1"
-            android:src="@drawable/calender" />
+            android:background="#acc4fc"
+            android:layout_weight="0" />
 
         <TextView
-            android:layout_width="match_parent"
+            android:layout_width="262dp"
             android:layout_height="match_parent"
             android:text="New Text"
             android:id="@+id/textView6"
+            android:autoText="false"
+            android:background="#acc4fc"
+            android:textSize="30dp"
+            android:textColor="#162aa9"
             android:layout_weight="1" />
 
     </LinearLayout>
+
 </LinearLayout>

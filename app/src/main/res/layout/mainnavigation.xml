@@ -25,7 +25,8 @@
                 android:id="@+id/textView2"
                 android:layout_weight="1"
                 android:textColor="#FFFFFF"
-                android:textSize="24dp" />
+                android:textSize="24dp"
+                android:textStyle="bold" />
 
             <ImageView
                 android:layout_width="32dp"

@@ -13,14 +13,17 @@
             android:layout_height="match_parent"
             android:id="@+id/imageView4"
             android:layout_weight="0.3"
-            android:src="@drawable/calender" />
+            android:src="@drawable/calender"
+            android:onClick="calender" />
 
         <TextView
-            android:layout_width="267dp"
+            android:layout_width="265dp"
             android:layout_height="match_parent"
             android:text="CALENDER"
             android:id="@+id/textView3"
-            android:textSize="50dp" />
+            android:textSize="50dp"
+            android:textColor="#113190"
+            android:textStyle="bold" />
     </LinearLayout>
 
     <LinearLayout
@@ -33,14 +36,17 @@
             android:layout_height="match_parent"
             android:id="@+id/imageView5"
             android:layout_weight="1"
-            android:src="@drawable/photo" />
+            android:src="@drawable/photo"
+            android:onClick="camera" />
 
         <TextView
-            android:layout_width="264dp"
+            android:layout_width="262dp"
             android:layout_height="match_parent"
             android:text="MY PAGE"
             android:id="@+id/textView4"
-            android:textSize="50dp" />
+            android:textSize="50dp"
+            android:textColor="#113190"
+            android:textStyle="bold" />
     </LinearLayout>
 
     <LinearLayout
@@ -51,16 +57,21 @@
 
         <ImageView
             android:layout_width="138dp"
-            android:layout_height="match_parent"
+            android:layout_height="148dp"
             android:id="@+id/imageView6"
-            android:src="@drawable/graph" />
+            android:src="@drawable/graph"
+            android:onClick="graph"
+            android:layout_weight="0.11" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:text="GRAPH"
             android:id="@+id/textView5"
-            android:layout_weight="1"
-            android:textSize="50dp" />
+            android:layout_weight="0.90"
+            android:textSize="50dp"
+            android:textColor="#113190"
+            android:focusableInTouchMode="false"
+            android:textStyle="bold" />
     </LinearLayout>
 </LinearLayout>

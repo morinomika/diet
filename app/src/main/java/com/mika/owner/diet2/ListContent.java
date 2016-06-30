@@ -1,4 +1,4 @@
-package com.example.owner.diet2;
+package com.mika.owner.diet2;
 
 /**
  * Created by owner on 16/06/20.
