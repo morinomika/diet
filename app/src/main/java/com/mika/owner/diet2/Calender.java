@@ -118,7 +118,7 @@ public class Calender extends AppCompatActivity implements View.OnClickListener 
                     Intent intent = new Intent(getApplicationContext(), Calender.class);
                     startActivity(intent);
                 }else if(position == 1){
-                    Intent intent = new Intent(getApplicationContext(), mypage.class);
+                    Intent intent = new Intent(getApplicationContext(), meals.class);
                     startActivity(intent);
                 }else if(position == 2){
                     Intent intent = new Intent(getApplicationContext(), GraphTest.class);
@@ -205,7 +205,7 @@ public class Calender extends AppCompatActivity implements View.OnClickListener 
     }
 
     public void photo(View v){
-        Intent intent = new Intent(this,mypage.class);
+        Intent intent = new Intent(this,meals.class);
         startActivity(intent);
     }
 

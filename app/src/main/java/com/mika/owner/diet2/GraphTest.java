@@ -49,7 +49,6 @@ public class GraphTest extends AppCompatActivity {
         graph.setRangeY(0, 100);
         graph.setLineToFill(0);
 
-
     }
 
     public void graph(View v){
@@ -59,7 +58,7 @@ public class GraphTest extends AppCompatActivity {
     }
 
     public void photo(View v){
-        Intent intent = new Intent(this,mypage.class);
+        Intent intent = new Intent(this,meals.class);
         startActivity(intent);
     }
 

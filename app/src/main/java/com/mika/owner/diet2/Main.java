@@ -86,7 +86,7 @@ public class Main extends AppCompatActivity {
     public void onActivityResult(int requestCode, int resultCode, Intent intent){
         super.onActivityResult(requestCode, resultCode, intent);
 
-        if(requestCode == RESULT_OK){
+        if(resultCode == RESULT_OK){
             if (requestCode == REQUEST_CODE_GALLERY ){
                 try{
 

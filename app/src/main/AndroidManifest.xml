@@ -13,17 +13,18 @@
         <activity android:name=".Calender" />
         <activity android:name=".Main">
 
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
         </activity>
         <activity android:name=".mypage" />
         <activity android:name=".GraphTest" />
         <activity android:name=".ListContent3" />
         <activity android:name=".meals">
 
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
     </application>
 

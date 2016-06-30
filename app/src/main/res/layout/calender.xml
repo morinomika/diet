@@ -82,12 +82,6 @@
                 android:weightSum="1">
 
 
-                <android.support.v7.widget.Toolbar
-                    android:id="@+id/tool_bar"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="?attr/colorPrimary"
-                    android:minHeight="?attr/actionBarSize"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -96,154 +90,94 @@
                     android:id="@+id/date_id"
                     android:textSize="30dp" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:text="MONTH"
-                    android:id="@+id/textView2"
-                    android:layout_marginTop="10dp" />
-
-                <LinearLayout
-                    android:orientation="horizontal"
-                    android:layout_width="match_parent"
-                    android:layout_height="32dp"
-                    android:layout_marginTop="10dp">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Sun."
-                        android:id="@+id/textView8"
-                        android:layout_weight="1"
-                        android:textColor="#ea4040" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Mon."
-                        android:id="@+id/textView9"
-                        android:layout_weight="1" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Tue."
-                        android:id="@+id/textView10"
-                        android:layout_weight="1" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Wed."
-                        android:id="@+id/textView11"
-                        android:layout_weight="1" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Thu."
-                        android:id="@+id/textView12"
-                        android:layout_weight="1" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Fri."
-                        android:id="@+id/textView13"
-                        android:layout_weight="1" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Sat."
-                        android:id="@+id/textView14"
-                        android:layout_weight="1"
-                        android:textColor="#2f6eeb" />
-                </LinearLayout>
-
                 <LinearLayout
                     android:orientation="vertical"
                     android:layout_width="match_parent"
-                    android:layout_height="45dp"
-                    android:layout_marginTop="0dp">
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp">
 
                     <LinearLayout
                         android:orientation="horizontal"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:id="@+id/daysLayout"
-                        android:layout_marginTop="10dp">
+                        android:id="@+id/daysLayout">
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
-                            android:text="1"
+                            android:text=" 1"
                             android:id="@+id/textView16"
                             android:layout_weight="1"
-                            android:layout_marginTop="10dp"
                             android:background="#d2eaf8"
-                            android:textSize="25dp" />
+                            android:textSize="25dp"
+                            android:gravity="center"
+                            android:layout_margin="2dp" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
-                            android:text="2"
+                            android:text=" 2"
                             android:id="@+id/textView17"
                             android:layout_weight="1"
-                            android:layout_marginTop="10dp"
                             android:background="#d2eaf8"
-                            android:textSize="25dp" />
+                            android:textSize="25dp"
+                            android:gravity="center"
+                            android:layout_margin="2dp" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
-                            android:text="3"
+                            android:text=" 3"
                             android:id="@+id/textView18"
                             android:layout_weight="1"
-                            android:layout_marginTop="10dp"
                             android:background="#d2eaf8"
-                            android:textSize="25dp" />
+                            android:textSize="25dp"
+                            android:gravity="center"
+                            android:layout_margin="2dp" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
-                            android:text="4"
+                            android:text=" 4"
                             android:id="@+id/textView19"
                             android:layout_weight="1"
-                            android:layout_marginTop="10dp"
                             android:background="#d2eaf8"
-                            android:textSize="25dp" />
+                            android:textSize="25dp"
+                            android:gravity="center"
+                            android:layout_margin="2dp" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
-                            android:text="5"
+                            android:text=" 5"
                             android:id="@+id/textView20"
                             android:layout_weight="1"
-                            android:layout_marginTop="10dp"
                             android:background="#d2eaf8"
-                            android:textSize="25dp" />
+                            android:textSize="25dp"
+                            android:gravity="center"
+                            android:layout_margin="2dp" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
-                            android:text="6"
+                            android:text=" 6"
                             android:id="@+id/textView21"
                             android:layout_weight="1"
-                            android:layout_marginTop="10dp"
                             android:background="#d2eaf8"
-                            android:textSize="25dp" />
+                            android:textSize="25dp"
+                            android:gravity="center"
+                            android:layout_margin="2dp" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
-                            android:text="7"
+                            android:text=" 7"
                             android:id="@+id/textView22"
                             android:layout_weight="1"
-                            android:layout_marginTop="10dp"
                             android:background="#d2eaf8"
-                            android:textSize="25dp" />
+                            android:textSize="25dp"
+                            android:gravity="center"
+                            android:layout_margin="2dp" />
                     </LinearLayout>
 
                 </LinearLayout>
@@ -251,85 +185,92 @@
                 <LinearLayout
                     android:orientation="vertical"
                     android:layout_width="match_parent"
-                    android:layout_height="45dp"
-                    android:layout_marginTop="0dp">
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp">
 
                     <LinearLayout
                         android:orientation="horizontal"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_marginTop="10dp">
+                        android:layout_marginTop="0dp">
 
                         <TextView
-                            android:layout_width="wrap_content"
+                            android:layout_width="0dp"
                             android:layout_height="match_parent"
-                            android:text="8"
+                            android:text=" 8"
                             android:id="@+id/textView23"
                             android:layout_weight="1"
-                            android:layout_marginTop="10dp"
                             android:background="#d2eaf8"
-                            android:textSize="25dp" />
+                            android:textSize="25dp"
+                            android:gravity="center"
+                            android:layout_margin="2dp" />
 
                         <TextView
-                            android:layout_width="wrap_content"
+                            android:layout_width="0dp"
                             android:layout_height="match_parent"
-                            android:text="9"
+                            android:text=" 9"
                             android:id="@+id/textView24"
                             android:layout_weight="1"
-                            android:layout_marginTop="10dp"
                             android:background="#d2eaf8"
-                            android:textSize="25dp" />
+                            android:textSize="25dp"
+                            android:gravity="center"
+                            android:layout_margin="2dp" />
 
                         <TextView
-                            android:layout_width="wrap_content"
+                            android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:text="10"
                             android:id="@+id/textView25"
                             android:layout_weight="1"
-                            android:layout_marginTop="10dp"
                             android:background="#d2eaf8"
-                            android:textSize="25dp" />
+                            android:textSize="25dp"
+                            android:gravity="center"
+                            android:layout_margin="2dp" />
 
                         <TextView
-                            android:layout_width="wrap_content"
+                            android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:text="11"
                             android:id="@+id/textView26"
                             android:layout_weight="1"
-                            android:layout_marginTop="10dp"
                             android:background="#d2eaf8"
-                            android:textSize="25dp" />
+                            android:textSize="25dp"
+                            android:gravity="center"
+                            android:layout_margin="2dp" />
 
                         <TextView
-                            android:layout_width="wrap_content"
+                            android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:text="12"
                             android:id="@+id/textView27"
                             android:layout_weight="1"
-                            android:layout_marginTop="10dp"
                             android:background="#d2eaf8"
-                            android:textSize="25dp" />
+                            android:textSize="25dp"
+                            android:gravity="center"
+                            android:layout_margin="2dp" />
 
                         <TextView
-                            android:layout_width="wrap_content"
+                            android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:text="13"
                             android:id="@+id/textView28"
                             android:layout_weight="1"
-                            android:layout_marginTop="10dp"
                             android:onClick="13"
                             android:background="#d2eaf8"
-                            android:textSize="25dp" />
+                            android:textSize="25dp"
+                            android:gravity="center"
+                            android:layout_margin="2dp" />
 
                         <TextView
-                            android:layout_width="wrap_content"
+                            android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:text="14"
                             android:id="@+id/textView29"
                             android:layout_weight="1"
-                            android:layout_marginTop="10dp"
                             android:background="#d2eaf8"
-                            android:textSize="25dp" />
+                            android:textSize="25dp"
+                            android:gravity="center"
+                            android:layout_margin="2dp" />
 
                     </LinearLayout>
 
@@ -338,14 +279,14 @@
                 <LinearLayout
                     android:orientation="vertical"
                     android:layout_width="match_parent"
-                    android:layout_height="45dp"
-                    android:layout_marginTop="0dp">
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp">
 
                     <LinearLayout
                         android:orientation="horizontal"
                         android:layout_width="match_parent"
-                        android:layout_height="45dp"
-                        android:layout_marginTop="10dp">
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp">
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -353,9 +294,10 @@
                             android:text="15"
                             android:id="@+id/textView30"
                             android:layout_weight="1"
-                            android:layout_marginTop="10dp"
                             android:background="#d2eaf8"
-                            android:textSize="25dp" />
+                            android:textSize="25dp"
+                            android:gravity="center"
+                            android:layout_margin="2dp" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -363,9 +305,10 @@
                             android:text="16"
                             android:id="@+id/textView31"
                             android:layout_weight="1"
-                            android:layout_marginTop="10dp"
                             android:background="#d2eaf8"
-                            android:textSize="25dp" />
+                            android:textSize="25dp"
+                            android:gravity="center"
+                            android:layout_margin="2dp" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -373,9 +316,10 @@
                             android:text="17"
                             android:id="@+id/textView32"
                             android:layout_weight="1"
-                            android:layout_marginTop="10dp"
                             android:background="#d2eaf8"
-                            android:textSize="25dp" />
+                            android:textSize="25dp"
+                            android:gravity="center"
+                            android:layout_margin="2dp" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -383,9 +327,10 @@
                             android:text="18"
                             android:id="@+id/textView33"
                             android:layout_weight="1"
-                            android:layout_marginTop="10dp"
                             android:background="#d2eaf8"
-                            android:textSize="25dp" />
+                            android:textSize="25dp"
+                            android:gravity="center"
+                            android:layout_margin="2dp" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -393,9 +338,10 @@
                             android:text="19"
                             android:id="@+id/textView34"
                             android:layout_weight="1"
-                            android:layout_marginTop="10dp"
                             android:background="#d2eaf8"
-                            android:textSize="25dp" />
+                            android:textSize="25dp"
+                            android:gravity="center"
+                            android:layout_margin="2dp" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -403,9 +349,10 @@
                             android:text="20"
                             android:id="@+id/textView35"
                             android:layout_weight="1"
-                            android:layout_marginTop="10dp"
                             android:background="#d2eaf8"
-                            android:textSize="25dp" />
+                            android:textSize="25dp"
+                            android:gravity="center"
+                            android:layout_margin="2dp" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -413,9 +360,10 @@
                             android:text="21"
                             android:id="@+id/textView36"
                             android:layout_weight="1"
-                            android:layout_marginTop="10dp"
                             android:background="#d2eaf8"
-                            android:textSize="25dp" />
+                            android:textSize="25dp"
+                            android:gravity="center"
+                            android:layout_margin="2dp" />
 
                     </LinearLayout>
 
@@ -424,14 +372,14 @@
                 <LinearLayout
                     android:orientation="vertical"
                     android:layout_width="match_parent"
-                    android:layout_height="45dp"
-                    android:layout_marginTop="0dp">
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp">
 
                     <LinearLayout
                         android:orientation="horizontal"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_marginTop="10dp">
+                        android:layout_marginTop="0dp">
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -439,9 +387,11 @@
                             android:text="22"
                             android:id="@+id/textView37"
                             android:layout_weight="1"
-                            android:layout_marginTop="10dp"
+                            android:layout_marginTop="0dp"
                             android:background="#d2eaf8"
-                            android:textSize="25dp" />
+                            android:textSize="25dp"
+                            android:gravity="center"
+                            android:layout_margin="2dp" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -449,9 +399,11 @@
                             android:text="23"
                             android:id="@+id/textView38"
                             android:layout_weight="1"
-                            android:layout_marginTop="10dp"
+                            android:layout_marginTop="0dp"
                             android:background="#d2eaf8"
-                            android:textSize="25dp" />
+                            android:textSize="25dp"
+                            android:gravity="center"
+                            android:layout_margin="2dp" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -459,9 +411,11 @@
                             android:text="24"
                             android:id="@+id/textView39"
                             android:layout_weight="1"
-                            android:layout_marginTop="10dp"
+                            android:layout_marginTop="0dp"
                             android:background="#d2eaf8"
-                            android:textSize="25dp" />
+                            android:textSize="25dp"
+                            android:gravity="center"
+                            android:layout_margin="2dp" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -469,9 +423,11 @@
                             android:text="25"
                             android:id="@+id/textView40"
                             android:layout_weight="1"
-                            android:layout_marginTop="10dp"
+                            android:layout_marginTop="0dp"
                             android:background="#d2eaf8"
-                            android:textSize="25dp" />
+                            android:textSize="25dp"
+                            android:gravity="center"
+                            android:layout_margin="2dp" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -479,9 +435,11 @@
                             android:text="26"
                             android:id="@+id/textView41"
                             android:layout_weight="1"
-                            android:layout_marginTop="10dp"
+                            android:layout_marginTop="0dp"
                             android:background="#d2eaf8"
-                            android:textSize="25dp" />
+                            android:textSize="25dp"
+                            android:gravity="center"
+                            android:layout_margin="2dp" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -489,9 +447,11 @@
                             android:text="27"
                             android:id="@+id/textView42"
                             android:layout_weight="1"
-                            android:layout_marginTop="10dp"
+                            android:layout_marginTop="0dp"
                             android:background="#d2eaf8"
-                            android:textSize="25dp" />
+                            android:textSize="25dp"
+                            android:gravity="center"
+                            android:layout_margin="2dp" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -499,9 +459,11 @@
                             android:text="28"
                             android:id="@+id/textView43"
                             android:layout_weight="1"
-                            android:layout_marginTop="10dp"
+                            android:layout_marginTop="0dp"
                             android:background="#d2eaf8"
-                            android:textSize="25dp" />
+                            android:textSize="25dp"
+                            android:gravity="center"
+                            android:layout_margin="2dp" />
 
                     </LinearLayout>
                 </LinearLayout>
@@ -509,72 +471,83 @@
                 <LinearLayout
                     android:orientation="vertical"
                     android:layout_width="match_parent"
-                    android:layout_height="45dp"
-                    android:layout_marginTop="0dp">
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp">
 
                     <LinearLayout
                         android:orientation="horizontal"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_marginTop="10dp">
+                        android:layout_marginTop="0dp">
 
                         <TextView
-                            android:layout_width="wrap_content"
+                            android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:text="29"
                             android:id="@+id/textView44"
-                            android:layout_marginTop="10dp"
                             android:background="#d2eaf8"
                             android:textSize="25dp"
-                            android:layout_weight="1" />
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:layout_margin="2dp" />
 
                         <TextView
-                            android:layout_width="wrap_content"
+                            android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:text="30"
                             android:id="@+id/textView45"
-                            android:layout_marginTop="10dp"
                             android:background="#d2eaf8"
                             android:textSize="25dp"
-                            android:layout_weight="1" />
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:layout_margin="2dp" />
 
                         <TextView
-                            android:layout_width="wrap_content"
+                            android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:text="31"
                             android:id="@+id/textView46"
-                            android:layout_marginTop="10dp"
                             android:background="#d2eaf8"
                             android:textSize="25dp"
-                            android:layout_weight="1" />
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:layout_margin="2dp" />
 
                         <TextView
-                            android:layout_width="wrap_content"
+                            android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:id="@+id/textView47"
-                            android:layout_marginTop="10dp"
-                            android:layout_weight="1" />
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="    "
+                            android:layout_margin="2dp" />
 
                         <TextView
-                            android:layout_width="wrap_content"
+                            android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:id="@+id/textView48"
-                            android:layout_marginTop="10dp"
-                            android:layout_weight="1" />
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="    "
+                            android:layout_margin="2dp" />
 
                         <TextView
-                            android:layout_width="wrap_content"
+                            android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:id="@+id/textView49"
-                            android:layout_marginTop="10dp"
-                            android:layout_weight="1" />
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="    "
+                            android:layout_margin="2dp" />
 
                         <TextView
-                            android:layout_width="wrap_content"
+                            android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:id="@+id/textView50"
-                            android:layout_marginTop="10dp"
-                            android:layout_weight="1" />
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="    "
+                            android:layout_margin="2dp" />
 
                     </LinearLayout>
                 </LinearLayout>
