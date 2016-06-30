@@ -84,19 +84,22 @@
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
                 android:id="@+id/imageButton7"
-                android:layout_weight="1" />
+                android:layout_weight="1"
+                android:src="@drawable/tue11" />
 
             <ImageButton
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
                 android:id="@+id/imageButton8"
-                android:layout_weight="1" />
+                android:layout_weight="1"
+                android:src="@drawable/tue22" />
 
             <ImageButton
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
                 android:id="@+id/imageButton9"
-                android:layout_weight="1" />
+                android:layout_weight="1"
+                android:src="@drawable/tue33" />
 
         </LinearLayout>
 
@@ -110,19 +113,22 @@
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
                 android:id="@+id/imageButton10"
-                android:layout_weight="1" />
+                android:layout_weight="1"
+                android:src="@drawable/wed11" />
 
             <ImageButton
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
                 android:id="@+id/imageButton11"
-                android:layout_weight="1" />
+                android:layout_weight="1"
+                android:src="@drawable/wed22" />
 
             <ImageButton
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
                 android:id="@+id/imageButton12"
-                android:layout_weight="1" />
+                android:layout_weight="1"
+                android:src="@drawable/wed33" />
 
         </LinearLayout>
 
